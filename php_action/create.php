@@ -2,6 +2,7 @@
 session_start();
 require_once '../db/index.php';
 require_once '../pages/add.php';
+
 if(isset($_POST['btn-cadastrar'])) {
     // Tratamento dos dados
     $nome = mysqli_escape_string($connect, $_POST['nome']);
